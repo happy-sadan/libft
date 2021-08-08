@@ -6,7 +6,7 @@
 #    By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 13:54:47 by trcottam          #+#    #+#              #
-#    Updated: 2021/06/21 23:14:31 by trcottam         ###   ########.fr        #
+#    Updated: 2021/08/09 00:09:18 by trcottam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,6 +84,49 @@ SRC =	ft_memset.c\
 		ft_strcmp.c\
 		ft_max_int.c\
 		ft_min_int.c\
+		\
+		ft_printf.c\
+		ft_printf/print_ordinary_str.c\
+		ft_printf/process_format.c\
+		ft_printf/print_conv.c\
+		ft_printf/len_to_arg.c\
+		ft_printf/print_null_char_conv.c\
+		ft_printf/format_to_conv.c\
+		ft_printf/convert_arg.c\
+		ft_printf/init_conv.c\
+		ft_printf/process_flags.c\
+		ft_printf/process_width.c\
+		ft_printf/process_precision.c\
+		ft_printf/process_len.c\
+		ft_printf/process_spec.c\
+		ft_printf/arg_to_conv.c\
+		ft_printf/int_arg_to_conv.c\
+		ft_printf/double_arg_to_conv.c\
+		ft_printf/char_arg_to_conv.c\
+		ft_printf/str_arg_to_conv.c\
+		ft_printf/apply_precision_padding.c\
+		ft_printf/apply_zero_padding.c\
+		ft_printf/apply_prefix.c\
+		ft_printf/apply_sign.c\
+		ft_printf/apply_space_padding.c\
+		ft_printf/apply_uppercase.c\
+		ft_printf/conv_has_sign.c\
+		ft_printf/get_conv_base.c\
+		ft_printf/conv_is_unsigned.c\
+		ft_printf/conv_is_int.c\
+		ft_printf/conv_is_double.c\
+		ft_printf/get_prefix_len.c\
+		ft_printf/conv_is_sci.c\
+		ft_printf/int_arg_to_conv_var.c\
+		ft_printf/init_double_s.c\
+		ft_printf/get_double_conv_precision.c\
+		ft_printf/get_double_parts.c\
+		ft_printf/get_sci_double_s.c\
+		ft_printf/conv_to_double_s.c\
+		ft_printf/double_int_part_to_conv.c\
+		ft_printf/append_double_dec_sep.c\
+		ft_printf/append_double_dec_part.c\
+		ft_printf/append_double_sci_suffix.c\
 
 .PHONY:	all clean fclean re
 
