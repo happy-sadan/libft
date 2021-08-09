@@ -6,7 +6,7 @@
 #    By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 13:54:47 by trcottam          #+#    #+#              #
-#    Updated: 2021/08/09 00:09:18 by trcottam         ###   ########.fr        #
+#    Updated: 2021/08/09 15:00:54 by trcottam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,6 +84,7 @@ SRC =	ft_memset.c\
 		ft_strcmp.c\
 		ft_max_int.c\
 		ft_min_int.c\
+		ft_strisint.c\
 		\
 		ft_printf.c\
 		ft_printf/print_ordinary_str.c\
