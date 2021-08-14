@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 14:03:26 by trcottam          #+#    #+#             */
-/*   Updated: 2021/08/11 23:03:12 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/08/14 11:25:57 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ bool	ft_strisint(char *str)
 		str++;
 	while (*str == '0')
 		str++;
+	if (!*str)
+		return (true);
 	tmp_itoa = ft_itoa(ft_atoi(str));
 	if (ft_strcmp(str, tmp_itoa)
 			&& !(!ft_strcmp(str, "2147483648") && neg))
