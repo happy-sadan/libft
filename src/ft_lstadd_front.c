@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 10:17:37 by trcottam          #+#    #+#             */
-/*   Updated: 2021/01/10 22:58:07 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/08/25 18:26:01 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	ft_lstadd_front(t_list **lst, t_list *item)
 		*lst = item;
 		return ;
 	}
+	*lst->prev = item;
 	item->next = *lst;
 	*lst = item;
 }
