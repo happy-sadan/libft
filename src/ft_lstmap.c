@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/04 11:58:11 by trcottam          #+#    #+#             */
-/*   Updated: 2021/06/21 17:40:57 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/08/25 21:16:02 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,15 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !f)
 		return (NULL);
+	if (lst->prev)
+		lst->prev->next = NULL;
 	lstmap = NULL;
 	while (lst)
 	{
-		lst_current = ft_lstnew((*f)(lst->data));
+		if (lst->prev)
+			lst_current = ft_lstnew_circ((*f)(lst->data));
+		else
+			lst_current = ft_lstnew((*f)(lst->data));
 		if (!lst_current)
 		{
 			ft_lstclear(&lstmap, del);
@@ -31,5 +36,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		ft_lstadd_back(&lstmap, lst_current);
 		lst = lst->next;
 	}
+	if (lst->prev)
+		lst->prev->next = lst;
 	return (lstmap);
 }
