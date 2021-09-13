@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 17:57:58 by trcottam          #+#    #+#             */
-/*   Updated: 2021/08/25 18:10:34 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/09/13 17:20:45 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -197,7 +197,6 @@ bool				conv_has_sign(t_conv *conv);
 bool				conv_is_int(t_conv *conv);
 bool				conv_is_unsigned(t_conv *conv);
 bool				conv_is_double(t_conv *conv);
-bool				conv_is_sci(t_conv *conv, double d);
 
 unsigned int		get_conv_base(t_conv *conv);
 size_t				get_prefix_len(char *str, t_conv *conv);

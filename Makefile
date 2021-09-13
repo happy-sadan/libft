@@ -6,7 +6,7 @@
 #    By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 13:54:47 by trcottam          #+#    #+#              #
-#    Updated: 2021/08/09 15:00:54 by trcottam         ###   ########.fr        #
+#    Updated: 2021/09/13 17:16:23 by trcottam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -117,7 +117,6 @@ SRC =	ft_memset.c\
 		ft_printf/conv_is_int.c\
 		ft_printf/conv_is_double.c\
 		ft_printf/get_prefix_len.c\
-		ft_printf/conv_is_sci.c\
 		ft_printf/int_arg_to_conv_var.c\
 		ft_printf/init_double_s.c\
 		ft_printf/get_double_conv_precision.c\
