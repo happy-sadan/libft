@@ -6,7 +6,7 @@
 #    By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/09 13:54:47 by trcottam          #+#    #+#              #
-#    Updated: 2021/09/13 17:21:21 by trcottam         ###   ########.fr        #
+#    Updated: 2021/09/15 15:07:42 by trcottam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -86,6 +86,7 @@ SRC =	ft_memset.c\
 		ft_min_int.c\
 		ft_strisint.c\
 		ft_lstnew_circ.c\
+		ft_lstget.c\
 		\
 		ft_printf.c\
 		ft_printf/print_ordinary_str.c\
