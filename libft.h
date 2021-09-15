@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/21 17:57:58 by trcottam          #+#    #+#             */
-/*   Updated: 2021/09/15 15:09:23 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/09/15 17:59:58 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ t_list				*ft_lstmap(
 						void (*del)(void *));
 t_list				*ft_lstnew_circ(void *content);
 t_list				*ft_lstget(t_list *lst, int i);
+t_list				*ft_lstpop(t_list **lst);
 
 int					ft_abs(int j);
 int					ft_islower(int c);
