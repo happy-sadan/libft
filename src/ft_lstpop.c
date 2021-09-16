@@ -6,7 +6,7 @@
 /*   By: trcottam <trcottam@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 17:51:26 by trcottam          #+#    #+#             */
-/*   Updated: 2021/09/15 18:04:34 by trcottam         ###   ########.fr       */
+/*   Updated: 2021/09/16 12:28:50 by trcottam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ t_list	*ft_lstpop(t_list **lst)
 	}
 	else
 		item->next = NULL;
+	if (*lst == item)
+		*lst = NULL;
 	return (item);
 }
